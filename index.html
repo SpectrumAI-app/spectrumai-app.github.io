@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language school</title>
+    <meta name="description" content="Онлайн курси іноземних мов. Англійська, Німецька, Польська, Чеська. Курси вивчення мов у школі Spectrum" />
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.webp">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.webp">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.webp">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.webp">
+
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.webp">
+   
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.webp">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.webp">
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon/android-icon-192x192.webp">
+    <link rel="icon" type="image/png" sizes="36x36" href="./images/favicon/android-icon-36x36.webp">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Inter:wght@400;500;600&family=Manrope:wght@400;600;700&family=Montserrat:wght@700&family=Nunito+Sans:wght@400;600;700&family=Oswald&family=Raleway:wght@300;400;600;700;800&family=Roboto:wght@700;900&family=Rubik&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body class="main-page">
+    <header class="header" id="header">
+        <div class="container">
+            <div class="main-header">
+        <div class="logo">
+            <picture>
+                <source srcset="./images/main/Logo-Spectrum.webp 1x, ./images/main/Logo-Spectrum@2x.webp">
+                <img width="78" height="87"  src="./images/main/Logo-Spectrum.webp" alt="Logo" >
+            </picture>
+            <a href="./index.html" width:78px class="header__logo-text link">Spectrum</a>
+        </div>
+        <button type="button" class="header__mobile-menu-btn" data-modal-open>
+            <picture>
+                <source srcset="./images/phone/mobile-header.webp 1x, ./images/phone/mobile-header@2x.webp 2x">
+                <img src="./images/phone/mobile-header.webp" alt="button-icon" class="header__mobile-icon">
+            </picture>
+        </button>
+            <nav class="navigation">
+                <ul class="main-navigation list">
+                    <li><a href="#header" class="nav__link link">Головна</a></li>
+                    <li><a href="#selection" class="nav__link link">Послуги</a></li>
+                    <li><a href="#about-us" class="nav__link link">Про нас</a></li>
+                    <li><a href="#road-map" class="nav__link link">Ваш шлях</a></li>
+                    <li><a href="#price" class="nav__link link">Прайс</a></li>
+                    <li><a href="#reviewes" class="nav__link link">Відгуки</a></li>
+                </ul>
+
+                <a href="#contact-form" class="nav__button link">Контакти</a>
+            </nav>
+        </div>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+            <button type="button" class="mobile-menu__close-btn" data-modal-close>
+                <svg class="mobile-menu__close-icon">
+                    <use href="./images/svgs/symbol-defs.svg#mobile-menu__cls-btn"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu__nav list">
+                <li><a href="#about-us" class="mobile-menu__nav-text link">Про нас</a></li>
+                <li><a href="#selection" class="mobile-menu__nav-text link">Курси</a></li>
+                <li><a href="#price" class="mobile-menu__nav-text link">Прайс</a></li>
+                <li><a href="#road-map" class="mobile-menu__nav-text link">Шлях до перемоги</a></li>
+            </ul>
+            <button type="button" class="mobile-menu__form-btn">Вивчити мову</button>
+            <ul class="mobile-menu__social-links list">
+                <li><a href="https://www.instagram.com/spectrum_schule/" class="mobile-menu__social-link link">Instagram</a></li>
+                <li><a href="https://t.me/ilpicium" class="mobile-menu__social-link link">Telegram</a></li>
+                <li><a href="mailto:SpectrumSchule@gmail.com" class="mobile-menu__social-link link">Gmail</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="hero" id="hero">
+        <div class="container">
+            <h1 class="main-article">Мовні Курси Для кожного</h1>
+            <p class="hero__text">Складемо програму навчання, згідно вашим інтересам, підберемо уроки з найактуальніших тем під ваші запити та цілі.</p>
+            <a href="#selection" type="button" class="hero__btn link">Детальніше
+                <svg class="hero__btn-svg">
+                    <use href="./images/svgs/symbol-defs.svg#hero__btn-svg"></use>
+                </svg>
+            </a>
+        
+            <img loading="lazy" src="./images/desktop/hero__img.webp" alt="man" class="hero__img-desktop">
+            <img src="./images/phone/hero__img-phone.webp" alt="man" class="hero__img-phone">
+        </div>
+    </main>
+    <section class="selection" id="selection">
+        <div class="container">
+            <p class="selection__sub-article">Наші курси</p>
+            <h2 class="selection__article">Широкий спектр курсів</h2>
+            <ul class="selection__list list">
+                <li class="little-grp tablet-edt little-grp-tabl-edt desktop-edt" data-aos="flip-left">
+                    <img src="./images/main/work.webp" alt="little-group-picture" class="little-grp__img">
+                    <h3 class="little-grp__article little-grp-tabl-edt-article">Індивідуальні заняття</h3>
+                    <p class="little-grp__sub-article little-grp-tabl-edt-sub-article">Персональна програма та темп навчання</p>
+                    <a href="#price" class="little-grp__btn link">Обрати курс
+                        <svg class="selection__btn-svg">
+                            <use href="./images/svgs/symbol-defs.svg#icon-selection__btn-svg"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="middle-grp tablet-edt middle-grp-tabl-edt desktop-edt" data-aos="flip-left">
+                    <img src="./images/main/discussion.webp" alt="middle-group-picture" class="little-grp__img">
+                    <h3 class="middle-grp__article middle-grp-tabl-edt-article">Маленька група</h3>
+                    <p class="middle-grp__sub-article middle-grp-tabl-edt-sub-article">Від 5 до 9 чоловік</p>
+                    <a href="#price" class="little-grp__btn link">Обрати курс
+                        <svg class="selection__btn-svg">
+                            <use href="./images/svgs/symbol-defs.svg#icon-selection__btn-svg"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="little-grp tablet-edt desktop-edt" data-aos="flip-left">
+                    <img src="./images/main/meeting.webp" alt="higher-group-picture" class="little-grp__img">
+                    <h3 class="little-grp__article">Велика група</h3>
+                    <p class="little-grp__sub-article">Від 10 до 15 чоловік</p>
+                    <a href="#price" class="little-grp__btn link">Обрати курс
+                        <svg class="selection__btn-svg">
+                            <use href="./images/svgs/symbol-defs.svg#icon-selection__btn-svg"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="tablet-edt desktop-edt" data-aos="flip-left">
+                    <p class="selection-list-last__text">Бронюйте місце у групі та вирушайте у подорож іноземних мов!</p>
+                    <a href="#contact-form" class="selection-list-last__btn link">Забронювати місце
+                        <svg class="selection-list-last__btn-svg">
+                            <use href="./images/svgs/symbol-defs.svg#icon-selection__btn-svg"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <img src="./images/desktop/selection__img.webp" alt="theme-picture" class="selection__desktop-img">
+        </div>
+    </section>
+    <section class="about-us" id="about-us">
+        <div class="container">
+            <h2 class="about-us__article">Трішки про нас</h2>
+            <ul class="about-us__list list" data-aos="fade-up"
+            data-aos-duration="3000">
+                <li>
+                    <p class="about-us__text mobile-edt">Досвідченні викладачі</p>
+                </li>
+                <li>
+                    <p class="about-us__text mobile-edt">Сучасна навчальна програма</p>
+                </li>
+                <li>
+                    <p class="about-us__text">Індивідуальний підхід до кожного студента</p>
+                </li>
+            </ul>
+            <img src="./images/desktop/about-us__img.webp" alt="man-and-laptop" class="about-us__img">
+            <div class="advantages">
+                <img src="./images/phone/advantages-mobile.webp" alt="advantages" class="advantages-img">
+                <img src="./images/tablet/advantages-tablet.webp" alt="advantages" class="advantages-tablet"> 
+                <img src="./images/tablet/advantages-tablet.webp" alt="advantages" class="advantages-desktop">
+                <img src="./images/main/roket.webp" alt="roket" class="roket-img">
+            </div>
+        </div>
+    </section>
+    <section class="road-map" id="road-map">
+        <div class="container">
+            <h2 class="road-map__article">Захопливий шлях
+            від нуля до Профі</h2>
+            <picture>
+                <source srcset="./images/phone/road-map-mobile.webp 1x, ./images/phone/road-map-mobile@2x.webp 2x">
+            <img src="./images/phone/road-map-mobile@2x.webp" alt="road-map" class="road-map__mobile-img">
+            </picture>
+            <picture>
+                <source srcset="./images/desktop/road-map__desktop.webp 1x, ./images/desktop/road-map__desktop@2x.webp 2x">
+                <img src="./images/desktop/road-map__desktop.webp" alt="road-map" class="road-map__desktop">
+            </picture>
+            <img src="./images/desktop/road__map-roket.webp" alt="roket" class="road-map__roket-desktop">
+        </div>
+    </section>
+    <section class="price" id="price">
+        <div class="container">
+            <p class="price__sub-article">Ціни та плани</p>
+            <h2 class="price__article">Наші тарифні плани</h2>
+            <ul class="price__lists list">
+                <li class="price__list-individual" data-aos="flip-right">
+                <div class="top-part">
+                    <p class="top-part__sub-article">Індивідуальні Заняття</p>
+                    <h3 class="top-part__article">€ 15.00</h3>
+                    <p class="top-part__under-article">Кожне заняття</p>
+                </div> 
+                <div class="bottom-part">
+                    <h3 class="bottom-part__article">Англійська Німецька Чешська Польска</h3>
+                    <ul class="bottom-part__list list">
+                        <li><p class="bottom-part__list-text">Індивідуальна програма</p></li>
+                        <li><p class="bottom-part__list-text list-text-second">Можливість будувати графік</p></li>
+                        <li><p class="bottom-part__list-text list-text-third">Персональні дз</p></li>
+                        <li><p class="bottom-part__list-text list-text-fourth">Вирішення пресональних проблем</p></li>
+                    </ul>
+                    <a href="#contact-form" class="bottom-part__btn link">Обрати Курс</a>
+                </div>
+                </li>
+                <li class="price__list-individual big-grp" data-aos="flip-right">
+                <div class="top-part top-part__big">
+                    <p class="top-part__sub-article sub-article__big">Велика Группа</p>
+                    <h3 class="top-part__article article__big">€ 200.00</h3>
+                    <p class="top-part__under-article under-article__big">За 4 місяці</p>
+                </div>
+                <div class="bottom-part">
+                    <h3 class="bottom-part__article btm-art-big">Англійська Німецька Чешська Польска</h3>
+                    <ul class="bottom-part__list list">
+                        <li>
+                            <p class="bottom-part__list-text text__big">Великий та цікавий коллектив</p>
+                        </li>
+                        <li>
+                            <p class="bottom-part__list-text text__big text-big-second">Креативні заннятя на комунікацію</p>
+                        </li>
+                        <li>
+                            <p class="bottom-part__list-text text__big text-big-third">Чітка програма</p>
+                        </li>
+                        <li>
+                            <p class="bottom-part__list-text text__big text-big-fourth">Перевірка рівня кожен місяць</p>
+                        </li>
+                    </ul>
+                    <a href="#contact-form" class="bottom-part__btn link">Обрати Курс</a>
+                </div>
+                </li>
+                <li class="price__list-individual" data-aos="flip-right">
+                <div class="top-part">
+                    <p class="top-part__sub-article">Маленька Группа</p>
+                    <h3 class="top-part__article">€ 250.00</h3>
+                    <p class="top-part__under-article">За 4 місяці</p>
+                </div>
+                <div class="bottom-part">
+                    <h3 class="bottom-part__article">Англійська Німецька Чешська Польска</h3>
+                    <ul class="bottom-part__list list">
+                        <li>
+                            <p class="bottom-part__list-text">Мала та атмосферна группа</p>
+                        </li>
+                        <li>
+                            <p class="bottom-part__list-text list-text-second">Рівномірне приділення часу</p>
+                        </li>
+                        <li>
+                            <p class="bottom-part__list-text list-text-third">Адаптивна програма</p>
+                        </li>
+                        <li>
+                            <p class="bottom-part__list-text list-text-fourth">Можливість повторення матер’ялу</p>
+                        </li>
+                    </ul>
+                    <a href="#contact-form" class="bottom-part__btn link">Обрати Курс</a>
+                </div></li>
+            </ul>
+            </div>
+        </div>
+    </section>
+    <section class="reviewes" id="reviewes">
+        <div class="reviewes__container">
+            <p class="reviewes__sub-article">Відгуки</p>
+            <h2 class="reviewes__article">Що Про Нас Говорять?</h2>
+            <ul class="reviewes__list list">
+                <li>
+                    <div class="reviewes__content">
+                        <ul class="reviewes-content__list list">
+                            <li class="reviewes__light reviewes__light-desktop" data-aos="zoom-in">
+                                <p class="reviewes-content__main-text-light">Обрав курс індивідуальних занять. За 6 місяців навчання вивчив
+                                    Англійську з рівня A2 до B2. Я й подумати не міг, що я
+                                    зможу так підтягнути свої знання за такий короткий час. Тепер я можу вільно спілкуватися англійською!</p>
+                                <h3 class="reviewes-content__article-light">Андрій</h3>
+                                <p class="reviewes-content__sub-article-light">Здав IELTS на рівень B2</p>
+                                <img src="./images/main/reviewes__stars-img.webp" alt="stars" class="reviewes__stars-img-second">
+                                <img src="./images/phone/reviewes__mobile-photo-second.webp" alt="reviewer's-face"
+                                    class="reviewes__mobile-photo-second">
+                            </li>
+                            <li class="reviewes__dark" data-aos="zoom-in">
+                                <p class="reviewes-content__main-text-dark">Прийшов на курс з нульовим рівнем німецької. Ні в університеті, ні на курсах ніяк не виходило вивчити цю складну мову.
+                                Але після першого заняття в цій школі, я зрозумів, що це не тільки легко, але й неймвовірно цікаво!</p>
+                                <h3 class="reviewes-content__article">Віктор</h3>
+                                <p class="reviewes-content__sub-article">Володіє німецькою на рівні С1</p>
+                                <img src="./images/main/reviewes__stars-img.webp" alt="stars" class="reviewes__stars-img">
+                                <img src="./images/phone/reviewes__mobile-photo-first.webp" alt="reviewer's-face" class="reviewes__mobile-photo-first">
+                            </li>
+                            <li class="reviewes__light reviewes__tablet-edt" data-aos="zoom-in">
+                                <p class="reviewes-content__main-text-light">По рекомендації друзів, пішла на ці курси. За ці 5 місяців навчання прогрес ВЕЛИЧЕЗНИЙ. Як показують тести, за 5 місяців
+                                я вийшла майже на Б1 з Німецької мови. Дуже задоволена, рекомендую!</p>
+                                <h3 class="reviewes-content__article-light">Марія</h3>
+                                <p class="reviewes-content__sub-article-light">Володіє німецькою на рівні С1</p>
+                                <img src="./images/main/reviewes__stars-img.webp" alt="stars" class="reviewes__stars-img-third">
+                                <img src="./images/phone/reviewes__mobile-photo-third.webp" alt="reviewer's-face" class="reviewes__mobile-photo-third">
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="reviewes__photo"></div>
+                    <div class="reviewes__content"></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="contact-form" id="contact-form">
+        <div class="container desktop-form tablet-form">
+            <div class="text-content">
+                <div class="text-content_main-text">
+                    <p>
+                        Годі вже читати,<br />
+                        це легше, чим ти думаєш!)
+                    </p>
+                </div>
+                <div class="text-content_secondary-text">
+                    <p>
+                        Ходять чутки, що за 4 місяці реально вивчити до C1!<br />
+                        Може спробуєш? <br />Чи ну його...
+                    </p>
+                </div>
+                <div class="text-content_adress-text">
+                    <div class="text-content_adress-text_info">
+                        <img width="10" height="24" src="./images/svgs/map.svg" alt="map logo" />
+                        <a class="contact-form__link link" href="https://goo.gl/maps/EAqeHC8RCa61ERzj6">Stuttgart, Germany</a>
+                    </div>
+                    <div class="text-content_adress-text_info">
+                        <div><img width="11" height="14" src="./images/svgs/phone.svg" alt="map logo" /></div>
+                        <div>
+                            <a class="contact-form__link link" href="tel:+380992348644">+380 99 234 8644</a>
+                        </div>
+                    </div>
+                    <div class="text-content_adress-text_info">
+                        <div><img width="14" height="12" src="./images/svgs/mail.svg" alt="map logo" /></div>
+                        <div>
+                            <a class="contact-form__link link" href="mailto:SpectrumSchule@gmail.com">SpectrumSchule@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-content" data-aos="zoom-in-up">
+                <div class="form-content_block">
+                    <form id="sentMessage" >
+                        <div class="form-content_text-block">
+                            <div class="form-content_text-block_inputs">
+                                <p>Ваше Ім'я</p>
+                                <input  name="name" required type="text" placeholder="Ivan Ivanov" />
+                                <div class="line"></div>
+                            </div>
+                            <div class="form-content_text-block_inputs">
+                                <p>Ваш номер Телефону</p>
+                                <input  name="phone" required type="text" placeholder="+380 (67) 999 99 99" />
+                                <div class="line"></div>
+                            </div>
+                            <div class="form-content_text-block_inputs">
+                                <p>Як з Вами зручніше зв'язатися</p>
+                                <input  name="type" type="text" placeholder="telegram" />
+                                <div class="line"></div>
+                            </div>
+                            <div class="form-content_text-block_inputs">
+                                <p>Побажання</p>
+                                <input  name="message" type="text" placeholder="Гарного дня!" />
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                        <button id="sendButton" type="submit" class="form-button">Надіслати</button>
+                        <script>
+                            var form = document.getElementById("sentMessage");
+                            form.addEventListener("submit", function (e) {
+                              e.preventDefault();
+                              emailjs
+                                .sendForm(
+                                  "service_0cqt3z4",
+                                  "template_hlq095h",
+                                  e.target,
+                                  "NDg7MQMHZTj01T4v3"
+                                )
+                                .then(
+                                  (result) => {
+                                    console.log(result);
+                                    Swal.fire({
+                                      icon: "success",
+                                      title: "Ваші дані були надіслані!",
+                                    });
+                                  },
+                                  (error) => {
+                                    console.log(error.text);
+                                    Swal.fire({
+                                      icon: "error",
+                                      title: "Упс, щось пішло не так(",
+                                      text: error.text,
+                                    });
+                                  }
+                                );
+                              e.target.reset();
+                            });
+                          </script>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-company">
+                <div class="footer-company_logo">
+                    <img width="78" height="87" src="./images/main/Logo-Spectrum.webp" alt="logo" class="footer-logo" />
+                    <p>Spectrum</p>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <div class="footer-nav_first">
+                    <ul>
+                        <li class="footer-nav_first-discription-list-main list"><a>Навігація</a></li>
+                        <li class="footer-nav_first-discription-list list"><a class="link footer__link" href="#header">Головна</a></li>
+                        <li class="footer-nav_first-discription-list list"><a class="link footer__link" href="#selection">Послуги</a></li>
+                        <li class="footer-nav_first-discription-list list"><a class="link footer__link"  href="#about-us">Про нас</a></li>
+                        <li class="footer-nav_first-discription-list list"><a class="link footer__link"  href="#road-map">Ваш шлях</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav_second">
+                    <ul class="footer-nav_first-discription-lists">
+                        <li class="footer-nav_first-discription-list-main list"><a>Звязок</a></li>
+                        <li class="footer-nav_first-discription-list list"><a class="link footer__link" href="#contact-form">Пропозиції</a></li>
+                        <li class="footer-nav_first-discription-list list"><a class="link footer__link" href="#reviewes">Відгуки</a></li>
+                        <li class="footer-nav_first-discription-list list"><a class="link footer__link" href="#contact-form">Контакти</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social">
+                <p>Соціальні мережі</p>
+                <div class="footer-social_icons">
+                    <a href="mailto:SpectrumSchule@gmail.com"><img width="62" height="61" src="./images/svgs/social-mail.svg" alt="gmail logo" /></a>
+                    <a href="https://t.me/ilpicium"><img width="62" height="61" src="./images/svgs/social-telegram.svg" alt="telegram logo" /></a>
+                    <a href="https://www.instagram.com/spectrum_schule/"><img width="62" height="61" src="./images/svgs/social-instagram.svg" alt="instagram logo" /></a>
+                </div>
+                <div class="tech-links">
+                    <ul class="tech-links__list list">
+                        <li><a href="" class="tech-link-first link">Copyright © 2022 Spectrum. All Rights Reserved.</a></li>
+                        <li><a href="https://aspycoders.com/" class="tech-link-second link"><span class="aspy__span">MADE BY:</span><span
+                                    class="coders__span">ASPY CODERS</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        AOS.init();
+    </script>
+  <script src="./js/modal.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+@import './base/base.scss';
+@import './base/container.scss';
+
+@import './header.scss';
+@import './hero.scss';
+@import './selection.scss';
+@import './about-us.scss';
+@import './road-map.scss';
+@import './price.scss';
+@import './reviewes.scss';
+@import './contact-form.scss';
+@import './footer.scss';
+
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}

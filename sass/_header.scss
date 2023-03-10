@@ -1,0 +1,281 @@
+.main-page {
+    background-color: #19191B;
+}
+
+//mobile-menu
+
+.header__mobile-menu-btn {
+    background-color: transparent;
+    border: none;
+}
+
+.mobile-menu__close-btn {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.header__mobile-icon {
+    position: absolute;
+    top: 44px;
+    right: 34px;
+    fill: #fff;
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+    &:hover,
+    &:focus {
+        color: #5454D4;
+    }
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu__close-icon {
+    fill: #fff;
+    width: 24px;
+    height: 24px;
+    &:hover,
+    &:focus {
+        fill: #5454D4;
+    }
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: #19191B;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: opacity;
+    z-index: 100;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    margin-top: 64px;
+    margin-left: 40px;
+}
+
+.mobile-menu__nav-text {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 34px;
+    
+        color: #FFFFFF;
+        &:hover,
+        &:focus {
+            color: #5454D4;
+        }
+                transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu__form-btn {
+    font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+    
+        color: #FFFFFF;
+        background-color: #5454D4;
+        border: none;
+        border-radius: 4px;
+        width: 95%;
+        height: 44px;
+        margin-left: 10px;
+        margin-top: 50%;
+
+        &:hover,
+        &:focus {
+            color: #5454D4;
+            background-color: #fff;
+        }
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu__social-links {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}
+
+.mobile-menu__social-link {
+    font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+        color: #5454D4;
+}
+
+.mobile-menu__social-links {
+    margin-top: 35px;
+    padding-bottom: 23px;
+}
+
+//mobile-header
+
+// .header {
+//     background-color: #19191B;
+// }
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    margin-top: 13px;
+}
+
+.header__logo {
+    width: 78px;
+    
+}
+
+.header__logo-text {
+    font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 33px;
+        line-height: 39px;
+        /* identical to box height */
+    
+        text-align: right;
+    
+        color: rgba(255, 255, 255, 0.7);
+}
+
+//Mobile-Tablet versions settings
+
+@media screen and (min-width:768px) {
+    .header__mobile-menu-btn {
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .main-navigation {
+        display: none;
+    }
+}
+
+//Tablet-version
+
+@media screen and (min-width:768px) {
+    .main-navigation {
+        display: flex;
+        gap: 26px;
+    }
+
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+    }
+
+    .nav__link {
+        font-family: 'Nunito Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 27px;
+            text-align: right;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+            color: rgba(255, 255, 255, 0.7);
+
+        &:hover,
+        &:focus {
+            color: #5454D4;
+        }
+    }
+
+}
+
+// tablet-desktop versions settings
+
+    @media screen and (max-width:1300px) {
+        .nav__button {
+            display: none;
+        }
+    }
+
+// desktop version
+
+    @media screen and (min-width:1300px) {
+        .main-header {
+            flex-direction: row;
+        }
+
+        .nav__button {
+            background-color: transparent;
+            border: 0.66369px solid #FFFFFF;
+                backdrop-filter: blur(0.66369px);
+                /* Note: backdrop-filter has minimal browser support */
+            
+                border-radius: 3.31845px;
+                width: 172px;
+                height: 48px;
+
+                font-family: 'Nunito Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 20px;
+                    text-align: center;
+                    letter-spacing: -0.331985px;
+                        display: flex;
+                            justify-content: center;
+                            align-items: center;
+                
+                    color: #FFFFFF;
+
+                    &:hover,
+                    &:focus {
+                        color: #5454D4;
+                        border-color: #5454D4;
+                    }
+        }
+
+        .navigation {
+            display: flex;
+            gap: 150px;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .logo {
+            margin-top: 33px;
+        }
+
+        .main-navigation {
+            margin-top: 15px;
+        }
+    }

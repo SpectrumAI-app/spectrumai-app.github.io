@@ -1,0 +1,81 @@
+//mobile-version
+
+.road-map {
+    padding-top: 100px;
+}
+
+.road-map__article {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 54px;
+        line-height: 62px;
+        /* or 115% */
+    
+        text-align: center;
+        letter-spacing: -1px;
+    
+        color: #DFDFDF;
+        padding-bottom: 10px;
+        border-bottom: 1.5px solid #FD346E;
+}
+
+.road-map__mobile-img {
+    padding-top: 30px;
+    width: 100%;
+    height: 297px;
+}
+
+//mobile-version settings
+
+//tablet-version
+
+@media screen and (min-width:770px) {
+    .road-map__article {
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .road-map__mobile-img {
+        height: auto;
+        padding-top: 0;
+    }
+}
+
+//desktop-version
+
+@media screen and (min-width:1300px) {
+    .road-map__desktop {
+        width: 100%;
+        position: absolute;
+        left: 0px;
+    }
+    .road-map__roket-desktop {
+        width: 382px;
+        height: 382px;
+        position: absolute;
+        top: 100px;
+        left: 0;
+    }
+    .road-map {
+        position: relative;
+        padding-bottom: 750px;
+    }
+}
+
+//desktop-version settings
+
+@media screen and (max-width:1299px) {
+    .road-map__desktop {
+        display: none;
+    }
+    .road-map__roket-desktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    .road-map__mobile-img {
+        display: none;
+    }
+}
