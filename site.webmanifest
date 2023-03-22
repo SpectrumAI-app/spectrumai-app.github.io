@@ -1,0 +1,19 @@
+{
+    "name": "Spectrum",
+    "short_name": "Spectrum",
+    "icons": [
+        {
+            "src": "assets/img/icons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/img/icons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#1d1617",
+    "background_color": "#1d1617",
+    "display": "standalone"
+}
