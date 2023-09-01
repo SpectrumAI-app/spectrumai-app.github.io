@@ -1,0 +1,27 @@
+.animate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 11px;
+    animation-duration: .5s;
+    animation-name: animate-fade;
+    animation-delay: 1.6s;
+    animation-fill-mode: backwards;
+    transition: opacity .3s ease;
+}
+
+.scroll-hide {
+    opacity: 1;
+}
+
+.scroll-hidden {
+    opacity: 0;
+}
+
+@keyframes animate-fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
