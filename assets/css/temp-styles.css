@@ -13,6 +13,20 @@
     transition: opacity .3s ease;
 }
 
+.telegram-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    -ms-transform: translate(50%,-50%);
+    transform: translate(50%,-50%);
+    background: #1D1617;
+    border-radius: 0.25rem;
+    padding: 1.3rem;
+    width: 350px;
+    z-index: 99999;
+}
+
 .scroll-hide {
     opacity: 1;
 }
