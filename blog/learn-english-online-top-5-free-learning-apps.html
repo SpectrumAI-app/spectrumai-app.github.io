@@ -13,6 +13,7 @@
     <meta name="language" content="English">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/blog.css">
+    <link rel="stylesheet" href="../assets/css/temp-styles.css">
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/icons/favicon-16x16.png">
@@ -536,16 +537,24 @@
     </div>
     <!--end page-->
     <div class="fixed-white-bg"></div>
-    <form class="subscribe-form" id="subscribe-form">
+    <div class="telegram-modal">
         <div class="close-form">
             <button type="button" id="close-modal" class="close-btn">×</button>
         </div>
-        <h3 class="text-center">Subscribe</h3>
-        <div class="form-group margin-below">
-            <input type="email" class="form-control" id="email" name="user_email" placeholder="Email">
-        </div>
-        <button type="submit" class="btn btn-primary">Subscribe</button>
-    </form>
+        <h3 class="text-center">
+            Hey, folks 😉<br/>
+            Our app is still in development, but luckily you can enjoy a full prototype of our app right now on Telegram!<br/>
+            Enjoy Spectrum directly in the world-famous messenger in one click.<br/>
+            Chat & Learn!<br/>
+        </h3>
+        <a href="https://t.me/SpectrumAI_bot" target="_blank" class="btn btn-primary btn-lg ts-scroll" data-bg-color="#453F8B"
+           aria-label="Join our Telegram Bot">
+            <span style="display: inline-flex; align-items: center; gap: 5px">
+                <i style='font-size:22px' class='fab'>&#xf3fe;</i>
+                Join our Telegram Bot
+            </span>
+        </a>
+    </div>
 
     <script src="../assets/js/jquery-3.3.1.min.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
@@ -553,7 +562,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
     <script src="../assets/js/jquery.wavify.js"></script>
     <script src="../assets/js/custom.js"></script>
-    <script src="../assets/js/blog.js"></script>
+    <script src="../assets/js/telegram-modal.js"></script>
 
 </body>
 

@@ -23,7 +23,8 @@
     background: #1D1617;
     border-radius: 0.25rem;
     padding: 1.3rem;
-    width: 350px;
+    width: 550px;
+    max-width: 90%;
     z-index: 99999;
 }
 
